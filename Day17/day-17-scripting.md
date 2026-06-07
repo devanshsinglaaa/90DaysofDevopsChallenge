@@ -23,9 +23,9 @@ do
 done
 ```
 
-![shell_script](../images/day17_01.png)
+![shell_script](../images/Day17_01.png)
 
-![shell_script](../images/day17_02.png)
+![shell_script](../images/Day17_02.png)
 
 
 ---
@@ -41,9 +41,9 @@ do
 done
 ```
 
-![shell_script](../images/day17_03.png)
+![shell_script](../images/Day17_03.png)
 
-![shell_script](../images/day17_04.png)
+![shell_script](../images/Day17_04.png)
 
 ---
 
@@ -63,9 +63,9 @@ done
 echo "Done, loop finished"
 ```
 
-![shell_script](../images/day17_05.png)
+![shell_script](../images/Day17_05.png)
 
-![shell_script](../images/day17_07.png)
+![shell_script](../images/Day17_07.png)
 
 
 ---
@@ -82,9 +82,9 @@ else
 fi
 ```
 
-![shell_script](../images/day17_08.png)
+![shell_script](../images/Day17_08.png)
 
-![shell_script](../images/day17_09.png)
+![shell_script](../images/Day17_09.png)
 
 
 ---
@@ -99,9 +99,9 @@ echo "Total arguments: $#"
 echo "All arguments: $@"
 ```
 
-![shell_script](../images/day17_10.png)
+![shell_script](../images/Day17_10.png)
 
-![shell_script](../images/day17_11.png)
+![shell_script](../images/Day17_11.png)
 
 ---
 
@@ -130,7 +130,7 @@ do
 done
 ```
 
-![shell_script](../images/day17_12.png)
+![shell_script](../images/Day17_12.png)
 
 ---
 
@@ -151,9 +151,9 @@ echo "Script completed successfully"
 ```
 
 
-![shell_script](../images/day17_14.png)
+![shell_script](../images/Day17_14.png)
 
-![shell_script](../images/day17_15.png)
+![shell_script](../images/Day17_15.png)
 
 
 ---
