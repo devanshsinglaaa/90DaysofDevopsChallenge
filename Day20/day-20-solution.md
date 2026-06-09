@@ -13,6 +13,10 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
+```
+![shell_script](../images/day20_01.png)
+```bash
+
 LOGFILE=$1
 
 # Check if file exists
@@ -23,6 +27,10 @@ fi
 
 echo "Analysing Log file : $LOGFILE"
 
+```
+![shell_script](../images/day20_02.png)
+```bash
+
 # -------------------------------
 # Error Count
 # -------------------------------
@@ -32,6 +40,15 @@ ERRORS=$(grep -Ei "ERROR|Failed" "$LOGFILE" | wc -l)
 
 echo "Error Count : $ERRORS"
 
+```
+![shell_script](../images/day20_03.png)
+```bash
+```
+![shell_script](../images/day20_04.png)
+```bash
+```
+![shell_script](../images/day20_05.png)
+```bash
 # -------------------------------
 # Critical Events
 # -------------------------------
@@ -43,11 +60,19 @@ do
     echo "Line $lineno: $message"
 done
 
+```
+![shell_script](../images/day20_06.png)
+```bash
+
 # -------------------------------
 # Top 5 Error Messages
 # -------------------------------
 echo ""
 echo "Top 5 Error Messages (Most Repeated one's)"
+
+```
+![shell_script](../images/day20_07.png)
+```bash
 
 grep -Ei "ERROR" "$LOGFILE" \
 | awk '{$1=$2=$3=""; print $0}' \
@@ -55,6 +80,16 @@ grep -Ei "ERROR" "$LOGFILE" \
 | uniq -c \
 | sort -rn \
 | head -5
+
+```
+![shell_script](../images/day20_08.png)
+```bash
+
+```
+Final Output ->
+![shell_script](../images/day20_09.png)
+```bash
+
 
 # -------------------------------
 # Summary File (simple direct name)
