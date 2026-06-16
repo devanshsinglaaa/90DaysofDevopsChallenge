@@ -177,6 +177,131 @@ I am actively learning DevOps concepts and implementing them in real-time throug
   📄 File: `Day17/day-17-scripting.md`
 
 ---
+### 🧠 Shell Scripting & Automation
+
+#### ✅ Day 18 – Functions & Intermediate Shell Scripting
+
+* Implemented **modular Bash scripts using functions**
+* Practiced **local vs global variables**
+* Used `set -euo pipefail` for production-safe scripting
+* Built system utility scripts:
+
+  * Disk & memory checker
+  * System info dashboard
+  * CPU & process monitoring
+
+📄 File: `Day18/day-18-challenge.md`
+
+---
+
+#### ✅ Day 19 – Backup Automation & Cron Jobs
+
+* Built a **real-world backup automation script (`backup.sh`)**
+* Created compressed backups using `tar`
+* Implemented **backup rotation (keep latest 5 backups)**
+* Logged execution details to a log file
+* Automated execution using **cron jobs**
+
+### ⚙️ Key Concepts:
+
+* Cron scheduling (`crontab -e`)
+* Log-based monitoring
+* Disk space management
+* Automation workflows
+
+📄 File: `Day19/day-19-challenge.md`
+
+---
+
+
+#### ✅ Day 20 – Log Analyzer Script
+
+* Built a real-world **log analyzer script** using Bash
+* Counted errors using `grep` and `wc`
+* Extracted critical logs with line numbers
+* Identified top repeated error messages
+* Generated automated report file
+
+📄 File: `Day20/day-20-solution.md`
+
+---
+
+#### ✅ Day 21 – Shell Scripting Cheat Sheet
+
+* Created a complete **Bash scripting reference guide**
+* Covered variables, loops, conditionals, functions
+* Documented `grep`, `awk`, `sed`, `sort`, `uniq`
+* Added real-world one-liners
+
+📄 File: `Day21/shell_scripting_cheatsheet.md`
+
+---
+
+### 🔧 Git & Version Control
+
+#### ✅ Day 22 – Git Basics
+
+* Initialized Git repository
+* Learned staging, committing, and history
+* Explored `.git` internal structure
+* Created personal Git commands reference
+
+📄 File: `Day22/day-22-notes.md`
+
+---
+
+#### ✅ Day 23 – Git Branching & GitHub
+
+* Created and managed branches (`feature-1`, `feature-2`)
+* Switched branches using `git switch`
+* Practiced isolated development
+* Connected repo to GitHub using SSH
+* Created Pull Request and merged changes
+
+📄 File: `Day23/day-23-notes.md`
+
+---
+
+#### ✅ Day 24 – Advanced Git (Merge, Rebase, Stash, Cherry-Pick)
+
+* Performed **fast-forward and merge commits**
+* Used `git rebase` to maintain clean history
+* Practiced **stash workflow** for context switching
+* Applied `git cherry-pick` for selective commits
+* Handled real-world merge & rebase conflicts
+
+📄 File: `Day24/day-24-notes.md`
+
+---
+
+#### ✅ Day 25 – Reset vs Revert & Branching Strategies
+
+* Practiced `git reset --soft`, `--mixed`, `--hard`
+* Understood impact on commit history, staging, and files
+* Used `git revert` to safely undo commits
+* Resolved **real-world revert conflicts manually**
+* Compared Reset vs Revert (interview-level understanding)
+
+### 🌿 Branching Strategies Learned:
+
+* **GitFlow** (structured releases)
+* **GitHub Flow** (simple & fast)
+* **Trunk-Based Development** (continuous integration)
+
+📄 File: `Day25/day-25-notes.md`
+
+---
+
+### 🚀 Git Skills Gained
+
+* Branching & merging workflows
+* Rebase vs merge understanding
+* Conflict resolution (merge + rebase + revert)
+* Safe undo strategies (`revert` vs `reset`)
+* GitHub collaboration (PR workflow)
+
+---
+
 
 ## 🔥 Projects Built So Far
 
