@@ -66,6 +66,9 @@ Issue → Create Branch → Make Changes → Create PR → Review → Merge
   gh auth login
   gh auth status
   ```
+![shell_script](../images/day26_01.png)
+
+![shell_script](../images/day26_02.png)
 
 * Repository:
 
@@ -73,6 +76,8 @@ Issue → Create Branch → Make Changes → Create PR → Review → Merge
   gh repo create
   gh repo view
   ```
+![shell_script](../images/day26_03.png)
+
 
 * Issues:
 
@@ -81,6 +86,7 @@ Issue → Create Branch → Make Changes → Create PR → Review → Merge
   gh issue list
   gh issue view
   ```
+![shell_script](../images/day26_05.png)
 
 * Pull Requests:
 
@@ -91,6 +97,14 @@ Issue → Create Branch → Make Changes → Create PR → Review → Merge
   gh pr diff
   gh pr merge
   ```
+![shell_script](../images/day26_06.png)
+
+![shell_script](../images/day26_07.png)
+
+![shell_script](../images/day26_08.png)
+
+![shell_script](../images/day26_09.png)
+
 
 ---
 
