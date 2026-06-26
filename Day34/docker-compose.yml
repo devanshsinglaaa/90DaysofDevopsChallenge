@@ -1,0 +1,76 @@
+services:
+  app:
+    build: ./app
+    container_name: compose_app_app
+
+    restart: always
+
+    ports:
+      - "3002:3000"
+
+    environment:
+      DB_HOST: postgres
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      DB_NAME: compose_db
+      REDIS_HOST: redis
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+    networks:
+      - backend
+
+    labels:
+      app: compose-demo
+      tier: frontend
+
+  postgres:
+    image: postgres:16
+    container_name: compose_postgres
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: compose_db
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+    networks:
+      - backend
+
+    labels:
+      app: compose-demo
+      tier: database
+
+  redis:
+    image: redis:7
+    container_name: compose_redis
+
+    restart: always
+
+    networks:
+      - backend
+
+    labels:
+      app: compose-demo
+      tier: cache
+
+volumes:
+  postgres_data:
+
+networks:
+  backend:
