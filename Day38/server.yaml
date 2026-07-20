@@ -1,0 +1,21 @@
+server:
+  name: SCG
+  ip: xx.xx.xx.xx
+  port: 5173
+
+database:
+  host: localhost
+  name: ${USERNAME}
+  credentials:
+    user: ${USER}
+    password: ${PASSWD}
+
+startup_script_literal: |
+  echo "Starting application..."
+  docker compose up -d
+  echo "Application Started"
+
+startup_script_folded: >
+  echo "Starting application..."
+  docker compose up -d
+  echo "Application Started"
