@@ -292,6 +292,302 @@ I am actively learning DevOps concepts and implementing them in real-time throug
 
 ---
 
+---
+
+### 🖥️ GitHub CLI & Developer Branding
+
+#### ✅ Day 26 – GitHub CLI
+
+* Installed and authenticated GitHub CLI (`gh`)
+* Created and managed repositories directly from the terminal
+* Created, viewed, and closed GitHub Issues
+* Created, reviewed, and merged Pull Requests without using the browser
+* Explored GitHub Actions workflow commands using GitHub CLI
+
+### ⚙️ Key Concepts:
+
+* GitHub CLI authentication
+* Repository management
+* Issue & Pull Request automation
+* GitHub Actions preview
+* Terminal-first GitHub workflow
+
+📄 File: `Day26/day-26-notes.md`
+
+---
+
+#### ✅ Day 27 – GitHub Profile Makeover
+
+* Improved GitHub profile with a professional profile picture
+* Added a clean developer bio and LinkedIn profile
+* Created a GitHub Profile README
+* Organized repositories and improved project presentation
+* Learned the importance of personal branding for developers
+
+### 🎯 Key Improvements:
+
+* Professional GitHub profile
+* Profile README
+* Better repository organization
+* Developer portfolio optimization
+
+📄 File: `Day27/day-27-notes.md`
+
+---
+
+#### ✅ Day 28 – Revision Day (Day 1–27)
+
+* Revised Linux fundamentals, Shell Scripting, Git & GitHub concepts
+* Performed self-assessment to identify improvement areas
+* Answered interview-style DevOps questions
+* Strengthened core concepts through revision
+* Reviewed GitHub profile and learning documentation
+
+📄 File: `Day28/day-28-notes.md`
+
+---
+
+### 🐳 Docker Fundamentals
+
+#### ✅ Day 29 – Introduction to Docker
+
+* Installed and verified Docker
+* Ran the first Docker container (`hello-world`)
+* Deployed an Nginx web server inside a container
+* Explored Ubuntu containers in interactive mode
+* Learned container lifecycle basics, port mapping, logs, and Docker commands
+
+### 🐳 Key Concepts:
+
+* Containers vs Virtual Machines
+* Docker Architecture
+* Docker Images & Containers
+* Detached Mode
+* Port Mapping
+* Docker Logs & Exec
+
+📄 File: `Day29/day-29-docker-basics.md`
+
+---
+
+#### ✅ Day 30 – Docker Images & Container Lifecycle
+
+* Pulled Docker images from Docker Hub
+* Compared Ubuntu and Alpine images
+* Inspected Docker images and metadata
+* Explored Docker image layers and caching
+* Practiced complete container lifecycle management
+
+### 🔄 Lifecycle Practiced:
+
+* Create
+* Start
+* Pause
+* Unpause
+* Stop
+* Restart
+* Kill
+* Remove
+
+### 📦 Key Concepts:
+
+* Docker Images
+* Image Layers
+* Image History
+* Docker Inspect
+* Container States
+
+📄 File: `Day30/day-30-images.md`
+
+---
+
+#### ✅ Day 31 – Dockerfile & Custom Images
+
+* Wrote the first custom Dockerfile
+* Built custom Ubuntu and Nginx Docker images
+* Learned Dockerfile instructions (`FROM`, `RUN`, `COPY`, `WORKDIR`, `EXPOSE`, `CMD`)
+* Understood the difference between `CMD` and `ENTRYPOINT`
+* Built and served a custom static website using Nginx
+* Used `.dockerignore` to optimize image builds
+* Explored Docker build cache and layer optimization
+
+### 🛠️ Key Concepts:
+
+* Dockerfile
+* Build Context
+* Docker Build Cache
+* CMD vs ENTRYPOINT
+* Docker Image Optimization
+
+📄 File: `Day31/day-31-dockerfile.md`
+
+---
+
+#### ✅ Day 32 – Docker Volumes & Networking
+
+* Understood why containers lose data
+* Solved data persistence using Named Volumes
+* Compared Named Volumes and Bind Mounts
+* Explored Docker networking concepts
+* Created custom bridge networks
+* Connected application and database containers using container names
+* Built a mini multi-container environment
+
+### 🌐 Key Concepts:
+
+* Named Volumes
+* Bind Mounts
+* Default Bridge Network
+* Custom Bridge Network
+* Docker DNS
+* Container-to-Container Communication
+
+📄 File: `Day32/day-32-volumes-networking.md`
+
+---
+
+#### ✅ Day 33 – Docker Compose: Multi-Container Applications
+
+* Learned the fundamentals of Docker Compose
+* Verified Docker Compose installation and version
+* Created the first `docker-compose.yml`
+* Deployed an Nginx container using Docker Compose
+* Learned how Compose automatically creates networks for services
+* Explored multi-container architecture using WordPress and MySQL
+* Practiced common Docker Compose commands and environment variables
+
+### ⚙️ Key Concepts:
+
+* Docker Compose
+* docker-compose.yml
+* Multi-container Applications
+* Automatic Networking
+* Environment Variables
+* Service Discovery
+
+📄 File: `Day33/day-33-compose.md`
+
+---
+
+#### ✅ Day 34 – Advanced Docker Compose
+
+* Explored advanced Docker Compose features for real-world applications
+* Used custom bridge networks for container communication
+* Configured persistent storage using named Docker volumes
+* Managed application configuration using environment variables and `.env` files
+* Implemented service dependencies with `depends_on`
+* Added health checks to ensure services start in the correct order
+* Practiced deploying multi-container applications using Docker Compose
+
+### ⚙️ Key Concepts:
+
+* Docker Compose
+* Custom Networks
+* Named Volumes
+* Environment Variables
+* Health Checks
+* depends_on
+* Service Orchestration
+
+📄 File: `Day34/day-34-compose-advanced.md`
+
+---
+
+#### ✅ Day 35 – Multi-Stage Builds & Docker Hub
+
+* Learned how to optimize Docker images using Multi-Stage Builds
+* Built production-ready Docker images with separate build and runtime stages
+* Used `node:alpine` images to reduce image size
+* Installed only production dependencies using `npm ci --omit=dev`
+* Created and optimized `.dockerignore`
+* Learned Docker image tagging and versioning
+* Published custom images to Docker Hub
+
+### ⚙️ Key Concepts:
+
+* Multi-Stage Builds
+* Image Optimization
+* Docker Hub
+* Image Tagging
+* Production Images
+* Docker Best Practices
+
+📄 File: `Day35/day-35-multistage-hub.md`
+
+---
+
+#### ✅ Day 36 – Docker Project: Dockerize a Full Stack Application
+
+* Dockerized a real-world Production Management System instead of a demo application
+* Containerized React frontend using Nginx
+* Containerized Express backend
+* Deployed MySQL using Docker with persistent volumes
+* Built a complete multi-container architecture using Docker Compose
+* Configured custom Docker networks for service communication
+* Used environment variables for application configuration
+* Added MySQL health checks and service dependencies
+* Imported an existing MySQL database automatically during container initialization
+* Fixed real deployment issues including database connectivity, CORS, React SPA routing, and container networking
+
+### ⚙️ Key Concepts:
+
+* Full Stack Deployment
+* Docker Compose
+* Nginx
+* Multi-Container Architecture
+* Persistent Volumes
+* Environment Variables
+* Health Checks
+* Container Networking
+* Database Initialization
+* Production Deployment
+
+📄 File: `Day36/day-36-docker-project.md`
+
+---
+
+#### ✅ Day 37 – Docker Revision & Cheat Sheet
+
+* Revised all Docker concepts learned from Day 29 to Day 36
+* Created a comprehensive Docker Cheat Sheet for daily reference
+* Reviewed Docker commands, Dockerfile instructions, networking, volumes, and Compose
+* Answered interview-oriented Docker revision questions
+* Strengthened understanding of production deployment workflows
+* Identified areas for further practice before moving to CI/CD
+
+### 📚 Key Concepts Revised:
+
+* Docker Images & Containers
+* Dockerfile
+* Docker Compose
+* Docker Networks
+* Docker Volumes
+* Multi-Stage Builds
+* Docker Hub
+* Health Checks
+* Production Best Practices
+
+📄 Files:
+- `Day37/docker-cheatsheet.md`
+- `Day37/day-37-revision.md`
+
+---
+
+### 🐳 Docker Skills Gained
+
+* Docker Installation & Architecture
+* Images & Containers
+* Container Lifecycle Management
+* Dockerfile Creation
+* Image Layering & Build Cache
+* CMD vs ENTRYPOINT
+* Docker Volumes & Bind Mounts
+* Docker Networking
+* Container Communication
+* Docker Compose
+* Multi-Container Deployment
+* Environment Variables
+
 ### 🚀 Git Skills Gained
 
 * Branching & merging workflows
