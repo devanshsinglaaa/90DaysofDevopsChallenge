@@ -1,0 +1,21 @@
+name: Manual Input Environment
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Select deployment environment
+        required: true
+        default: staging
+
+jobs:
+  take-input:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: "Code checkout"
+        uses: actions/checkout@v4
+      
+      - name: print environment
+        run: |
+          echo "The environment selected is : ${{ inputs.environment }}"
