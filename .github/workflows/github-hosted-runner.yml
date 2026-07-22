@@ -1,0 +1,46 @@
+name: git-runners
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ubuntu-os:
+    name: Ubuntu OS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Code checkout
+        uses: actions/checkout@v4
+      - name: Runner Information
+        run: |
+          echo "OS: ${{ runner.os }}"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"
+
+  windows-os:
+    name: Windows OS
+    runs-on: windows-latest
+
+    steps:
+      - name: Printing windows greet
+        run: echo "This is greeting from windows-latest runner"
+      
+      - name: Runner Information
+        run: |
+          Write-Host "OS: ${{ runner.os }}"
+          Write-Host "Hostname: $env:COMPUTERNAME"
+          Write-Host "User: $env:USERNAME"
+
+  mac-os:
+    name: Mac OS
+    runs-on: macos-latest
+
+    steps:
+      - name: Printing MacOS greet
+        run: echo "This is greeting from macos-latest runner"
+
+      - name: Runner Information
+        run: |
+          echo "OS: ${{ runner.os }}"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"

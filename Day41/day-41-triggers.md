@@ -20,6 +20,13 @@ Learn different GitHub Actions triggers and understand how to run workflows in m
 - Fail Fast
 
 ---
+## Images :
+
+![shell_script](../images/day41_01.png)
+
+![shell_script](../images/day41_02.png)
+
+---
 
 # 1️⃣ Pull Request Trigger
 
