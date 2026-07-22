@@ -1,0 +1,33 @@
+name: Go Linter
+on:
+  workflow_dispatch:
+
+jobs:
+  code-checkout-and-build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        go_version: ['1.22','1.23','1.24']
+    steps:
+      - name: Code Checkout
+        uses: actions/checkout@v4
+
+      - name: SetUp GO
+        uses: actions/setup-go@v6
+        with:
+          go-version-file: 'go.mod'
+          go-version: ${{ matrix.go_version }}
+          cache-dependency-path: 'go.sum'
+
+      - name: Run Formatter
+        run: go fmt
+        working-directory: backend
+
+      - name: Run go Vetter
+        run: go vet
+        working-directory: backend
+
+      - name: RUN Tests
+        run: go test
+        working-directory: backend
