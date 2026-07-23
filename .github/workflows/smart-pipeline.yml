@@ -1,0 +1,42 @@
+name: smart pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code checkout
+        runs: echo "performing Code checkout"
+      - name: Code Linter
+        runs: echo "Linting Code"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Code testing
+        runs: echo "Running all the tests"
+
+  summary:
+    runs-on: ubuntu-latest
+    needs:
+      - lint
+      - test
+    steps:
+      - name: Printing the summary
+        run: |
+          echo "Github branch : ${{ github.ref }}"
+      
+      - name: if condition for branch is main or not
+        if: github.ref == 'refs/heads/main'
+        run: echo "Main Branch Push"
+
+      - name: else condition for branch is main or not
+        if: github.ref != 'refs/heads/main'
+        run: echo "Feature Branch Push"
+
+      - name: commit message
+        run: |
+          echo "Commit Message : ${{ github.event.commits[0].message }}"

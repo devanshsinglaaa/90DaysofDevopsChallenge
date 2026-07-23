@@ -1,0 +1,47 @@
+name: conditional cases
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+
+  run-on-main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run only on main branch
+        if: github.ref == 'refs/heads/main'
+        run: |
+          echo "On main branch : Deploying on production !"
+
+  run-prev-failed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Failed execution
+        run: exit 1
+      - name: Runs only if previous step is failed.
+        if: failure()
+        run: echo  "previous step was failed"
+
+  run-on-push:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    steps:
+      - name: code checkout
+        run: echo "Code checkout begins"
+      - name: build
+        run: echo "Code building"
+      - name: Deploy
+        run: echo "Code Deployment"
+      
+
+  continue-on-error:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ignore failure, some error
+        continue-on-error: true
+        run: exit 1
+
+      - name: Step 2 after failure
+        run: echo "workflow continues"
+      
