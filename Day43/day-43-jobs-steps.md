@@ -5,6 +5,17 @@
 
 ## Workflow Images :
 
+![shell_script](../images/day43_01.png)
+
+![shell_script](../images/day43_02.png)
+
+![shell_script](../images/day43_03.png)
+
+![shell_script](../images/day43_04.png)
+
+![shell_script](../images/day43_05.png)
+
+![shell_script](../images/day43_06.png)
 
 
 ## 🎯 Objective
