@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Code checkout
-        runs: echo "performing Code checkout"
+        run: echo "performing Code checkout"
       - name: Code Linter
-        runs: echo "Linting Code"
+        run: echo "Linting Code"
 
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Code testing
-        runs: echo "Running all the tests"
+        run: echo "Running all the tests"
 
   summary:
     runs-on: ubuntu-latest
