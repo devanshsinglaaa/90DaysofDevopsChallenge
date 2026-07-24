@@ -1,0 +1,19 @@
+name: ARTIFACTS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: make a file and assign text
+        run: |
+          touch report.txt
+          echo "GitHub Actions Day 44, Artifact Upload Demo" >> report.txt
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: report
+          path: report.txt

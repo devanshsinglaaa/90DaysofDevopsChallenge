@@ -555,6 +555,7 @@ I am actively learning DevOps concepts and implementing them in real-time throug
 * Strengthened understanding of production deployment workflows
 * Identified areas for further practice before moving to CI/CD
 
+
 ### 📚 Key Concepts Revised:
 
 * Docker Images & Containers
@@ -595,6 +596,161 @@ I am actively learning DevOps concepts and implementing them in real-time throug
 * Conflict resolution (merge + rebase + revert)
 * Safe undo strategies (`revert` vs `reset`)
 * GitHub collaboration (PR workflow)
+
+---
+
+---
+
+## ⚙️ GitHub Actions & CI/CD
+
+#### ✅ Day 38 – Introduction to GitHub Actions & YAML
+
+* Learned the fundamentals of Continuous Integration (CI) and Continuous Deployment (CD)
+* Understood GitHub Actions architecture (Workflows, Events, Jobs, Steps, Runners)
+* Learned YAML syntax used in GitHub Actions workflows
+* Created the first GitHub Actions workflow
+* Explored workflow structure and execution flow
+
+### ⚙️ Key Concepts:
+
+* CI/CD
+* GitHub Actions
+* Workflow
+* Jobs & Steps
+* Events (Triggers)
+* YAML Basics
+* GitHub Runners
+
+📄 File: `Day38/day-38-github-actions.md`
+
+---
+
+#### ✅ Day 39 – GitHub Actions Events & Workflow Triggers
+
+* Explored different workflow trigger events
+* Built workflows using `push`, `pull_request`, and `workflow_dispatch`
+* Learned branch filtering for workflows
+* Triggered workflows manually and automatically
+* Understood event-driven automation in GitHub Actions
+
+### ⚙️ Key Concepts:
+
+* Workflow Triggers
+* push
+* pull_request
+* workflow_dispatch
+* Branch Filters
+* Event-Based Automation
+
+📄 File: `Day39/day-39-workflow-triggers.md`
+
+---
+
+#### ✅ Day 40 – GitHub Actions Expressions & Matrix Strategy
+
+* Learned GitHub Actions expressions and contexts
+* Built workflows using Matrix Strategy
+* Tested workflows across multiple operating systems
+* Executed jobs with different versions using matrices
+* Optimized workflow execution through parallel jobs
+
+### ⚙️ Key Concepts:
+
+* Expressions
+* Matrix Strategy
+* Multi-Platform Testing
+* Variables & Contexts
+* Parallel Jobs
+
+📄 File: `Day40/day-40-matrix-strategy.md`
+
+---
+
+#### ✅ Day 41 – Advanced Workflow Triggers & Matrix Builds
+
+* Explored advanced workflow triggers including `schedule` and manual inputs
+* Built dynamic workflows using workflow inputs
+* Implemented Matrix Builds for testing multiple Go versions
+* Learned matrix exclusions and `fail-fast`
+* Optimized workflows for real-world CI pipelines
+
+### ⚙️ Key Concepts:
+
+* schedule
+* workflow_dispatch Inputs
+* Matrix Builds
+* fail-fast
+* Matrix Exclude
+* Go CI Workflows
+
+📄 File: `Day41/day-41-triggers.md`
+
+---
+
+#### ✅ Day 42 – GitHub Actions Runners
+
+* Learned the role of GitHub-hosted and Self-hosted Runners
+* Executed workflows on Ubuntu, Windows, and macOS runners
+* Explored pre-installed software on GitHub-hosted runners
+* Configured and connected a Self-hosted Runner
+* Executed workflows on a Self-hosted Runner
+* Learned Runner labels and compared GitHub-hosted vs Self-hosted Runners
+
+### ⚙️ Key Concepts:
+
+* GitHub-hosted Runners
+* Self-hosted Runners
+* Runner Labels
+* Workflow Execution
+* Runner Management
+* Cross-Platform Workflows
+
+📄 File: `Day42/day-42-runners.md`
+
+---
+
+#### ✅ Day 43 – Jobs, Steps, Environment Variables & Conditionals
+
+* Built multi-job workflows using job dependencies (`needs`)
+* Learned parallel and sequential job execution
+* Managed environment variables at workflow, job, and step levels
+* Passed data between jobs using Job Outputs
+* Controlled workflow execution using conditional statements
+* Built a smart CI pipeline with parallel jobs and a summary stage
+
+### ⚙️ Key Concepts:
+
+* Multi-Job Workflows
+* needs
+* Environment Variables
+* GitHub Context Variables
+* Job Outputs
+* Conditional Execution (`if`)
+* failure()
+* continue-on-error
+* Smart Pipelines
+
+📄 File: `Day43/day-43-jobs-steps.md`
+
+---
+
+### 🚀 GitHub Actions Skills Gained
+
+* GitHub Actions Fundamentals
+* Workflow Creation
+* YAML for CI/CD
+* Workflow Triggers
+* Manual & Scheduled Workflows
+* Matrix Builds
+* GitHub-hosted Runners
+* Self-hosted Runners
+* Runner Labels
+* Multi-Job Workflows
+* Job Dependencies (`needs`)
+* Environment Variables
+* Job Outputs
+* Conditional Execution
+* Smart CI Pipeline Design
 
 ---
 

@@ -2,7 +2,8 @@ name: conditional cases
 
 on:
   workflow_dispatch:
-  push:
+  # push: commented just because every push was running it, and this repo will contain many pushes.
+  # push:
 
 jobs:
 
