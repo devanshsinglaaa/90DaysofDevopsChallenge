@@ -1,0 +1,33 @@
+name: Generate artifact in job a and download in job b
+
+on:
+  workflow_dispatch:
+
+jobs:
+  a:
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate a file a.txt
+        run: |
+          touch a.txt
+          echo "This is job a's artifact file" >> a.txt
+
+      - name: generate a artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: a-file
+          path: a.txt
+  b:
+    runs-on: ubuntu-latest
+    needs: a
+    steps:
+      - name: download artifact from job a.
+        uses: actions/download-artifact@v5
+        with:
+          name: a-file
+
+      - name: print contents of the file
+        run: |
+          echo "The contents of file a.txt are : "
+          cat a.txt
+
