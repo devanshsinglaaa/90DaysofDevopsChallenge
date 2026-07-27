@@ -19,9 +19,17 @@ on:
         description: Docker Hub Token
         required: true
 
+    outputs:
+      build_version:
+        description: Generated Build Version
+        value: ${{ jobs.build.outputs.build_version }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
+
+    outputs: ${{ steps.version.outputs.build_version }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -38,4 +46,10 @@ jobs:
           else
             echo "The secret docker token set : false"
           fi
-      
+
+      - name: Generate Build Version
+        id: version
+        run: |
+          VERSION: "v1.0-${GITHUB_SHA::7}"
+          echo "Build Version: $VERSION"
+          echo "build_version=$VERSION" >> "$GITHUB_OUTPUT"
