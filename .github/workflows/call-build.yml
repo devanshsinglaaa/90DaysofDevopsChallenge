@@ -1,0 +1,17 @@
+name: Call Build Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    uses: ./.github/Workflows/call-build.yml
+
+    with:
+      app_name: "my-web-app"
+      environment: "production"
+
+    secrets:
+      docker_token: ${{ secrets.DOCKERHUB_TOKEN }}
