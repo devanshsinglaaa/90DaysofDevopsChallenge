@@ -1,0 +1,35 @@
+name: Pull Request Advanced Triggers
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - closed
+
+jobs:
+  pr-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Event Type
+        run: |
+          echo "event name is:" ${{ github.event_name }} 
+          echo "event type is:" ${{ github.event.action }} 
+
+      - name: Print PR Title
+        run: echo "PR Title: ${{ github.event.pull_request.title }}"
+
+      - name: Print PR Author
+        run: echo "PR Author: ${{ github.event.pull_request.user.login }}"
+
+      - name: Print Source Branch
+        run: echo "Source Branch: ${{ github.head_ref }}"
+
+      - name: Print Target Branch
+        run: echo "Target Branch: ${{ github.base_ref }}"
+
+      - name: PR Merged
+        if: github.event.pull_request.merged == true
+        run: |
+          echo "🎉 Pull Request has been merged successfully!"

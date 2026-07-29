@@ -1,0 +1,20 @@
+name: Particular Module Trigger
+
+on:
+  push:
+    branches:
+      - main
+      - 'release/*'
+
+    paths:
+      - 'src/**'
+      - 'app/**'
+
+jobs:
+  smart-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Message
+        run: |
+          echo "Changes detected in src/ or app/"
+          echo "Workflow executed successfully."

@@ -1,0 +1,30 @@
+name: scheduled tasks
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '30 2 * * 1'
+    - cron: '0 */6 * * *'
+
+jobs:
+  scheduled-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Trigger
+        run: |
+          echo "Workflow TRiggered"
+          echo "Schedule : ${{ github.event.schedule }}"
+
+      - name: Health check
+        run: |
+          STATUS=$(curl -o /dev/null -s -w "%{http_code}" https://github.com)
+
+          echo "HTTP Status: $STATUS"
+
+          if [ "$STATUS" -eq 200 ]; then
+            echo "✅ Health Check Passed"
+          else
+            echo "❌ Health Check Failed"
+            exit 1
+          fi

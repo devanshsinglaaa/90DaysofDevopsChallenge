@@ -1,0 +1,17 @@
+name: Ignore Documentation Changes
+
+on:
+  push:
+    paths-ignore:
+      - '*.md'
+      - 'docs/**'
+
+jobs:
+  ignore-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: |
+          echo "Code changes detected."
+          echo "Workflow executed."
