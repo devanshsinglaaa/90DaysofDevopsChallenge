@@ -1,9 +1,12 @@
 name: Call Build Workflow
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+
+# un comment above three lines to run the workflow on every push.
 
 jobs:
   build:
