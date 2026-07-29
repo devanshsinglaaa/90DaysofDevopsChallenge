@@ -15,7 +15,7 @@ jobs:
 
       - name: Run Composite Action
         id: greeting
-        uses: ./.github/actions/setup-and-greet
+        uses: ./.github/workflows/actions/setup-and-greet
         with:
           name: Devansh Singla
           language: en
