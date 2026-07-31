@@ -914,12 +914,95 @@ I am actively learning DevOps concepts and implementing them in real-time throug
 
 ## 🔥 Projects Built So Far
 
-### 📦 Backup Automation Script
+### 📦 Backup Automation Script (Day 19)
 
-* Created `backup.sh` to automate directory backups
-* Implemented timestamp-based backups
-* Automated cleanup of old backups
-* Scheduled using cron jobs
+* Developed a Bash script to automate directory backups
+* Generated timestamped compressed archives
+* Implemented automatic cleanup of old backups
+* Scheduled backups using cron jobs
+* Added logging for backup operations
+
+---
+
+### 📊 Log Analyzer Script (Day 20)
+
+* Built a Bash-based log analysis tool
+* Counted and categorized log errors
+* Extracted critical log entries with line numbers
+* Generated automated log reports
+* Identified frequently occurring issues
+
+---
+
+### 🌐 AWS EC2 + Nginx Deployment (Day 08)
+
+* Provisioned an EC2 instance on AWS
+* Installed Docker and Nginx
+* Configured Security Groups and SSH access
+* Hosted a web application
+* Performed basic server monitoring and log analysis
+
+---
+
+### 🐳 Full Stack Dockerized Application (Day 36)
+
+* Dockerized a Production Management System
+* Containerized React frontend
+* Containerized Express backend
+* Configured MySQL with persistent Docker volumes
+* Implemented custom Docker networking
+* Used Docker Compose for multi-container orchestration
+* Added environment variables and health checks
+
+---
+
+### ⚙️ GitHub Actions CI Pipeline (Day 45)
+
+* Created a reusable Continuous Integration pipeline
+* Automated code checkout, linting, building, and testing
+* Implemented reusable workflows using `workflow_call`
+* Improved workflow maintainability through modular design
+
+---
+
+### 🐳 Docker Build & Publish Pipeline (Day 46)
+
+* Automated Docker image builds using GitHub Actions
+* Published frontend and backend images to Docker Hub
+* Managed Docker Hub authentication using GitHub Secrets
+* Implemented image tagging and versioning
+
+---
+
+### 🚀 Continuous Deployment Pipeline (Day 47)
+
+* Built a Continuous Deployment pipeline
+* Deployed applications using a Self-hosted GitHub Actions Runner
+* Automated Docker Compose deployments
+* Pulled the latest Docker images during deployment
+* Recreated containers automatically after successful builds
+
+---
+
+### 🏆 DevBoard – GitHub Actions CI/CD Capstone Project (Day 48)
+
+* Designed a complete production-style CI/CD pipeline
+* Created reusable workflows for Build, Test, Docker, and Deployment
+* Added Pull Request validation workflows
+* Automated Docker image publishing
+* Implemented Continuous Deployment using Docker Compose
+* Built a modular GitHub Actions architecture following CI/CD best practices
+
+---
+
+### 🔒 DevBoard – DevSecOps Pipeline (Day 49)
+
+* Integrated Trivy vulnerability scanning into the CI/CD pipeline
+* Added automated Dependency Review for Pull Requests
+* Enabled Secret Scanning and Push Protection
+* Applied least-privilege permissions to GitHub Actions workflows
+* Introduced reviewed vulnerability management using `.trivyignore`
+* Built a secure DevSecOps pipeline with automated security checks before deployment
 
 ---
 
