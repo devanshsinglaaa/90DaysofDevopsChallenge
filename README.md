@@ -754,6 +754,163 @@ I am actively learning DevOps concepts and implementing them in real-time throug
 
 ---
 
+---
+
+#### ✅ Day 44 – Reusable Workflows
+
+* Learned reusable workflows using `workflow_call`
+* Reduced workflow duplication by creating reusable CI components
+* Passed inputs and secrets between workflows
+* Built reusable Build & Test workflows
+* Improved workflow modularity and maintainability
+
+### ⚙️ Key Concepts:
+
+* workflow_call
+* Reusable Workflows
+* Inputs
+* Secrets
+* Modular CI Pipelines
+
+📄 File: `2026/day-44/day-44-reusable-workflows.md`
+
+---
+
+#### ✅ Day 45 – CI Pipeline for DevBoard
+
+* Built a production-style CI pipeline for the DevBoard project
+* Automated frontend and backend testing
+* Integrated linting and build validation
+* Used reusable workflows for cleaner pipeline design
+* Added workflow summaries for better visibility
+
+### ⚙️ Key Concepts:
+
+* Continuous Integration
+* Workflow Reusability
+* Automated Testing
+* Linting
+* Workflow Summary
+
+📄 File: `2026/day-45/day-45-devboard-ci.md`
+
+---
+
+#### ✅ Day 46 – Docker Build & Publish Automation
+
+* Automated Docker image builds using GitHub Actions
+* Logged in to Docker Hub securely using GitHub Secrets
+* Built and published frontend and backend Docker images
+* Implemented reusable Docker workflows
+* Used image tagging and versioning best practices
+
+### ⚙️ Key Concepts:
+
+* Docker Buildx
+* Docker Hub
+* GitHub Secrets
+* Docker Image Automation
+* Image Tagging
+
+📄 File: `2026/day-46/day-46-docker-automation.md`
+
+---
+
+#### ✅ Day 47 – Continuous Deployment (CD)
+
+* Implemented Continuous Deployment using a Self-hosted Runner
+* Automated application deployment using Docker Compose
+* Pulled latest Docker images automatically
+* Recreated containers during deployment
+* Built a complete CI/CD pipeline
+
+### ⚙️ Key Concepts:
+
+* Continuous Deployment
+* Self-hosted Runner
+* Docker Compose
+* Automated Deployment
+* Production Pipeline
+
+📄 File: `2026/day-47/day-47-continuous-deployment.md`
+
+---
+
+#### ✅ Day 48 – GitHub Actions Capstone Project
+
+* Built an end-to-end GitHub Actions CI/CD pipeline for DevBoard
+* Implemented reusable workflows for Build, Test, Docker, and Deployment
+* Created dedicated Pull Request and Main branch pipelines
+* Automated Docker image publishing to Docker Hub
+* Implemented deployment using a Self-hosted Runner
+
+### ⚙️ Key Concepts:
+
+* Reusable Workflows
+* CI/CD Pipeline
+* Pull Request Validation
+* Docker Automation
+* Deployment Pipeline
+* GitHub Actions Best Practices
+
+📄 File: `2026/day-48/day-48-github-actions-capstone.md`
+
+---
+
+#### ✅ Day 49 – DevSecOps with GitHub Actions
+
+* Integrated Trivy vulnerability scanning into the Docker pipeline
+* Added automated Dependency Review for Pull Requests
+* Enabled Secret Scanning and Push Protection
+* Applied least-privilege permissions to GitHub Actions workflows
+* Built a complete DevSecOps pipeline for the DevBoard project
+
+### ⚙️ Key Concepts:
+
+* DevSecOps
+* Trivy
+* Dependency Review
+* Secret Scanning
+* Push Protection
+* Principle of Least Privilege
+* Secure CI/CD
+
+📄 File: `2026/day-49/day-49-devsecops.md`
+
+---
+
+### 🚀 GitHub Actions Skills Gained
+
+* GitHub Actions Fundamentals
+* Workflow Creation
+* YAML for CI/CD
+* Workflow Triggers
+* Manual & Scheduled Workflows
+* Matrix Builds
+* GitHub-hosted Runners
+* Self-hosted Runners
+* Runner Labels
+* Multi-Job Workflows
+* Job Dependencies (`needs`)
+* Environment Variables
+* Job Outputs
+* Conditional Execution
+* Smart CI Pipeline Design
+* Reusable Workflows
+* Docker Automation
+* Docker Hub Integration
+* Continuous Deployment
+* Self-hosted Deployments
+* DevSecOps
+* Trivy Image Scanning
+* Dependency Review
+* Secret Scanning
+* Push Protection
+* Least-Privilege Workflow Permissions
+* Secure CI/CD Pipelines
+
+---
+
 
 ## 🔥 Projects Built So Far
 
